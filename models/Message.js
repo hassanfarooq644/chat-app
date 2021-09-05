@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const MessageSchema = mongoose.Schema({
-  userId: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "user",
   },
-  friendId: {
+  friend: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "user",
   },
